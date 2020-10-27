@@ -11,7 +11,7 @@
       - ./config/master.cnf:/etc/mysql/mariadb.conf.d/master.cnf
       - ./scripts:/scripts
     networks:
-      - tp6_mynetwork
+      - mynetwork
   maria-slave:
     image: mariadb:10.5
     environment:
@@ -21,4 +21,6 @@
       - ./backups:/backups
       - ./scripts:/scripts
     networks:
-      - tp6_mynetwork
+      - mynetwork
+networks:
+  mynetwork:

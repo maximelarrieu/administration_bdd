@@ -1,7 +1,7 @@
 # TP2
 
+[Le script de création de table et de users](/script.sql)
 ### Création de la base de données
-
 CREATE DATABASE events;
 USE events;
 
@@ -19,6 +19,9 @@ IDENTIFIED BY 'password';
 #### Droit de visualiser le contenu de la table public_events
 GRANT SELECT ON public_events TO 'event_supervisor'@'localhost'
 IDENTIFIED BY 'password';
+
+#### Valider les droits
+FLUSH PRIVILEGES;
 
 ### Connexion à l'utilisateur event_manager
 mysql -u event_manager -p

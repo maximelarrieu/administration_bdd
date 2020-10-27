@@ -1,7 +1,6 @@
 # TP1
 
 ### Création de la base de données
-
 CREATE DATABASE tp1;
 USE tp1;
 
