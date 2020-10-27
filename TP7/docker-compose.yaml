@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  maria_cluster:
+    image: mariadb:10.5
+    hostname: maria_cluster_1
+    ports:
+      - 4444
+    volumes:
+      - ./backups:/backups
+    environment:
+      - wsrep_cluster_address="gcomm://maria_cluster_1, maria_cluster_2, maria_cluster_3"
+    command: --wsrep-new-cluster
+  maria_cluster:
+    image: mariadb:10.5
+    hostname: maria_cluster_2
+    ports:
+      - 4567
+    environment:
+      - wsrep_cluster_address="gcomm://maria_cluster_1, maria_cluster_2, maria_cluster3"
+  maria_cluster:
+    image: mariadb:10.5
+    hostname: maria_cluster_3
+    ports:
+      - 4568
+    environment:
+      - wsrep_cluster_address="gcomm://maria_cluster_1, maria_cluster2, maria_cluster3"
