@@ -44,7 +44,7 @@ $ mysql -u root -p
 ```
 
 ### Dump de la base de données
-`$ mysqldump -u root -p users lesplusbeaux > backups/mydatabase.sql`
+`$ mysqldump -u root -p --databases users > backups/mydatabase.sql`
 
 ### Connexion à mariadb et importation de la base de données
 ```
