@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `lesplusbeaux`;
 CREATE TABLE `lesplusbeaux` (
   `nom` varchar(255) DEFAULT NULL,
   `mail` varchar(255) DEFAULT NULL,
-  `if_etudiant` tinyint(1) DEFAULT NULL
+  `is_student` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
