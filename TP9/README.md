@@ -16,14 +16,7 @@ Rendu du premier dashboard :
 
 ![First Dashboard](screenshots/first_dashboard.png "Premier Dashboard")
 
-Chaque panel dispose de sa metric. Dans l'édition de chacun, on retrouvera la metric des READS
-<img src="screenshots/read_metric.png" width="400" height="200"/>
-
-la metric des erreurs de connexions
-<img src="screenshots/errors_metric.png" width="400" height="200"/>
-
-ainsi que la metric du temps d'exportation
-<img src="screenshots/export_metric.png" width="400" height="200"/>
+Chaque panel dispose de sa metric. Dans l'édition de chacun, on retrouvera la[metric des READS](screenshots/read_metric.png), la [metric des erreurs de connexions](screenshots/errors_metric.png) ainsi que la [metric du temps d'exportation](screenshots/export_metric.png).
 
 ## Second dashboard
 
@@ -32,3 +25,15 @@ Rendu du second dashboard :
 ![Second Dashboard](screenshots/second_dashboard.png "Deuxième Dashboard")
 
 Comme précédemment, chaque panel dispose eux, de leur propre requête SQL.
+
+Nous retrouvons donc la requête du nombre d'utilisateurs créés par jour :
+![Users created](screenshots/users_request.png)
+
+Le nombre total de clients :
+![Total customers](screenshots/customers_request.png)
+
+Le nombre de paiments de la dernière semaine :
+![Payment last week](screenshots/payment_request.png)
+
+Le volume de ventes par jour et ses indicateurs :
+![Orders volume](screenshots/days_request.png)
